@@ -1,0 +1,3481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.M Group Coaching - Diploma & Degree Engineering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Enhanced 2025 Color Palette */
+            --primary: #6366f1;
+            --primary-light: #8b5cf6;
+            --primary-dark: #4f46e5;
+            --secondary: #ef4444;
+            --secondary-light: #f87171;
+            --secondary-dark: #dc2626;
+            --accent: #f59e0b;
+            --accent-light: #fbbf24;
+            --accent-dark: #d97706;
+            --success: #10b981;
+            --light: #0f172a;
+            --dark: #020617;
+            --gray: #1e293b;
+            --gray-dark: #334155;
+            --text: #e2e8f0;
+            --text-light: #94a3b8;
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 25px 80px rgba(0, 0, 0, 0.4);
+            --transition: all 0.3s ease;
+            --radius: 20px;
+            
+            /* Modern Gradients */
+            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            --gradient-secondary: linear-gradient(135deg, #ef4444 0%, #f97316 50%, #eab308 100%);
+            --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #ec4899 100%);
+            --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            
+            /* Glass Effects */
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            
+            /* Enhanced Shadows */
+            --shadow-glow: 0 0 50px rgba(99, 102, 241, 0.4);
+            --shadow-glow-secondary: 0 0 50px rgba(239, 68, 68, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+            overflow-x: hidden;
+            position: relative;
+            user-select: none; /* Disable text selection */
+        }
+
+        /* Reduced Animated Background Particles */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.15), transparent),
+                radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.1), transparent),
+                radial-gradient(1px 1px at 90px 40px, rgba(99, 102, 241, 0.2), transparent),
+                radial-gradient(1px 1px at 130px 80px, rgba(236, 72, 153, 0.15), transparent),
+                radial-gradient(2px 2px at 160px 30px, rgba(245, 158, 11, 0.1), transparent),
+                radial-gradient(3px 3px at 240px 90px, rgba(139, 92, 246, 0.12), transparent);
+            background-repeat: repeat;
+            background-size: 200px 100px, 180px 120px, 220px 110px, 190px 130px, 210px 115px, 230px 105px;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+            line-height: 1.3;
+            letter-spacing: -0.025em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 { 
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            background: linear-gradient(270deg, 
+                var(--primary), 
+                var(--secondary), 
+                var(--accent), 
+                var(--primary)
+            );
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        h2 { 
+            font-size: clamp(2rem, 4vw, 3rem);
+            background: linear-gradient(270deg, 
+                var(--primary), 
+                var(--accent), 
+                var(--secondary), 
+                var(--primary)
+            );
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        h3 { 
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: var(--text);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Modern Glass Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            margin-top: 1rem;
+            box-shadow: var(--glass-shadow);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                var(--shadow-glow), 
+                var(--glass-shadow),
+                0 15px 35px rgba(99, 102, 241, 0.4),
+                inset 0 2px 4px rgba(255,255,255,0.2),
+                0 0 60px rgba(99, 102, 241, 0.6);
+            background: var(--gradient-primary);
+            border-color: transparent;
+        }
+
+        .btn-secondary {
+            background: var(--gradient-secondary);
+            border-color: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: var(--gradient-accent);
+            box-shadow: var(--shadow-glow-secondary), var(--glass-shadow);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+        }
+
+        /* Modern Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            color: var(--accent);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        /* Enhanced About Section */
+        .about {
+            background: var(--gray);
+            position: relative;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .about .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .highlight-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .highlight-item i {
+            font-size: 2rem;
+            color: var(--accent);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .highlight-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            font-size: 1.1rem;
+        }
+
+        .highlight-item p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature-tag {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 25px;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .feature-tag:hover {
+            background: var(--gradient-primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .feature-tag i {
+            color: var(--success);
+            font-size: 0.8rem;
+        }
+
+        .about-text {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 3rem;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .about-text::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+
+        .about-text:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .about-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+        }
+
+        .about-image:hover {
+            transform: scale(1.01);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 2;
+        }
+
+        .about-image:hover .image-overlay {
+            opacity: 1;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+        }
+
+        .play-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(99, 102, 241, 0.8);
+        }
+
+        .floating-card {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            z-index: 3;
+        }
+
+        .card-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .card-content i {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .card-content h4 {
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+            color: var(--text);
+        }
+
+        .card-content p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .highlight {
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        /* Enhanced Header */
+        header {
+            background: var(--glass-bg);
+            backdrop-filter: blur(30px);
+            border-bottom: 1px solid var(--glass-border);
+            color: white;
+            padding: 1.2rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            border-bottom: 3px solid;
+            border-image: var(--gradient-primary) 1;
+        }
+
+        header.scrolled {
+            padding: 0.8rem 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(30px);
+            box-shadow: var(--shadow);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: var(--shadow-glow);
+            border: 3px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .logo-img:hover {
+            transform: rotate(5deg) scale(1.05);
+        }
+
+        .logo-text h1 {
+            font-size: 1.6rem;
+            color: white;
+            margin-bottom: 0;
+            line-height: 1.2;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-text span {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            font-weight: 300;
+            color: var(--text-light);
+        }
+
+        /* Enhanced Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 12px 20px;
+            border-radius: 30px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::before {
+            width: 80%;
+        }
+
+        .nav-link:hover {
+            color: var(--accent);
+            background: var(--glass-bg);
+            transform: translateY(-2px);
+            box-shadow: 
+                0 5px 15px rgba(99, 102, 241, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition);
+        }
+
+        .hamburger:hover {
+            background: var(--primary);
+            transform: scale(1.05);
+        }
+
+        /* Spectacular Hero Section */
+        .hero {
+            padding: 180px 0 100px;
+            background: var(--gradient-dark);
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(99, 102, 241, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+                url('https://kmphotoss.s3.ap-south-1.amazonaws.com/sirwith.jpg');
+            background-size: cover, cover, cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.8) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            padding: 12px 24px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-badge span {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-badge i {
+            margin-right: 8px;
+            color: var(--accent);
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 6vw, 5rem);
+            color: white;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            color: var(--text-light);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .hero-stat {
+            text-align: center;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 1.5rem 1rem;
+            min-width: 120px;
+            transition: var(--transition);
+        }
+
+        .hero-stat:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 900;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .btn-primary-hero {
+            background: var(--gradient-primary);
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-secondary-hero {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            padding: 18px 38px;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .btn-secondary-hero:hover {
+            background: var(--accent);
+            color: var(--dark);
+            box-shadow: var(--shadow-glow-secondary);
+        }
+
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .trust-item i {
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        .scroll-arrow {
+            width: 50px;
+            height: 50px;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .scroll-arrow:hover {
+            background: var(--accent);
+            color: var(--dark);
+            transform: scale(1.05);
+        }
+
+        /* Stunning Stats Section */
+        .stats {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--glass-border);
+            border-bottom: 1px solid var(--glass-border);
+            position: relative;
+        }
+
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0.05;
+            z-index: 1;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat {
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-accent);
+        }
+
+        .stat:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .stat h3 {
+            font-size: 4rem;
+            color: white;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+        }
+
+        .stat p {
+            color: var(--text);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Modern Courses Section */
+        .courses {
+            background: var(--light);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Ensure 3 columns on large screens for better layout */
+        @media (min-width: 1200px) {
+            .courses-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 3rem;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 1199px) {
+            .courses-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .course-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            text-align: center;
+            position: relative;
+            min-height: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 
+                var(--shadow-glow),
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 10px 25px rgba(99, 102, 241, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .course-icon {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 2.5rem;
+            position: relative;
+            z-index: 2;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .course-content {
+            padding: 2rem 1.5rem;
+            position: relative;
+            z-index: 2;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc(100% - 120px);
+        }
+
+        .course-card:hover .course-content {
+            transform: translateY(-5px);
+        }
+
+        .course-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .course-content > p {
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .course-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .course-details ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1rem;
+        }
+
+        .course-details li {
+            padding: 0.25rem 0;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .course-card:hover .course-details {
+            max-height: 320px;
+        }
+
+        .course-content .btn {
+            margin-top: auto;
+            padding: 12px 24px;
+            font-size: 0.9rem;
+            align-self: center;
+            min-width: 140px;
+        }
+
+        .course-content .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .course-card:nth-child(2n) .course-icon {
+            background: var(--gradient-accent);
+        }
+
+        .course-card:nth-child(3n) .course-icon {
+            background: var(--gradient-secondary);
+        }
+
+        /* Special styling for Entrance Exam card */
+        .entrance-exam-card {
+            border: 2px solid var(--accent);
+            background: linear-gradient(135deg, var(--glass-bg), rgba(245, 158, 11, 0.1));
+            position: relative;
+        }
+
+        .entrance-exam-card .course-icon {
+            background: var(--gradient-accent) !important;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .entrance-exam-card .course-content h3 {
+            color: var(--accent);
+        }
+
+        .entrance-exam-card .btn-primary {
+            background: var(--gradient-accent);
+            border: none;
+            color: white;
+        }
+
+        .entrance-exam-card .btn-primary:hover {
+            background: var(--gradient-secondary);
+            box-shadow: var(--shadow-glow-secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Enhanced Branches Section */
+        .branches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .branch-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+        }
+
+        .branch-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .branch-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .branch-header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-accent);
+        }
+
+        .branch-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .branch-content {
+            padding: 2rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+        }
+
+        .branch-info {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+        }
+
+        .branch-info i {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+            background: var(--glass-bg);
+            padding: 10px;
+            border-radius: 50%;
+            border: 1px solid var(--glass-border);
+        }
+
+        .branch-info h4 {
+            color: var(--text);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .branch-features {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .branch-features .feature-tag {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .branch-facilities {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .facility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .facility-item {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .facility-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .facility-item i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .facility-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .facility-item p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Enhanced Testimonials */
+        .rating {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .rating i {
+            color: #fbbf24;
+            font-size: 1.1rem;
+        }
+
+        .achievement {
+            display: inline-block;
+            background: var(--gradient-accent);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.5rem;
+        }
+
+        /* Enhanced Contact Cards */
+        .role-description {
+            display: block;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+
+        .contact-timing {
+            display: block;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        .contact-card .btn {
+            margin-top: 1rem;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Enhanced Location Section */
+        .location {
+            background: var(--gray);
+        }
+
+        .location-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .location-info {
+            flex: 1;
+            min-width: 300px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 3rem;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .location-map {
+            flex: 1;
+            min-width: 300px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 450px;
+            border: 2px solid var(--glass-border);
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Enhanced Gallery Section */
+        .gallery {
+            background: var(--light);
+        }
+        
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-filter {
+            padding: 12px 25px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--text);
+            font-weight: 500;
+        }
+        
+        .gallery-filter.active, .gallery-filter:hover {
+            background: var(--gradient-primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            height: 280px;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            padding: 1.5rem;
+            color: white;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1001;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+        
+        .gallery-modal.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            background: var(--primary);
+            transform: scale(1.05);
+        }
+
+        /* Student Reviews Section */
+        .reviews {
+            background: var(--gray);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(270deg, 
+                var(--accent), 
+                var(--primary), 
+                var(--secondary), 
+                var(--accent)
+            );
+            background-size: 400% 400%;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                var(--shadow-glow),
+                0 15px 30px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .testimonial-content {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-content i {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            font-size: 2.5rem;
+            color: var(--primary);
+            opacity: 0.3;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            color: var(--text);
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .author-details h4 {
+            margin-bottom: 0.25rem;
+            color: var(--text);
+        }
+
+        .author-details p {
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .rating {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .rating i {
+            color: #fbbf24;
+            font-size: 1rem;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Enhanced Contact Section */
+        .contact {
+            background: var(--light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--glass-shadow);
+            padding: 2.5rem;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .contact-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--primary);
+            box-shadow: var(--shadow-glow);
+            transition: var(--transition);
+        }
+
+        .contact-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 2rem;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            box-shadow: var(--shadow-glow);
+            transition: var(--transition);
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-card:nth-child(2n) .contact-icon {
+            background: var(--gradient-accent);
+        }
+
+        .contact-card:nth-child(3n) .contact-icon {
+            background: var(--gradient-secondary);
+        }
+
+        /* Enhanced Footer */
+        footer {
+            background: var(--gradient-dark);
+            color: white;
+            padding: 4rem 0 2rem;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-about {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2rem;
+        }
+
+        .footer-logo h2 {
+            color: white;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-heading {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--gradient-accent);
+        }
+
+        .footer-links {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 0;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        .footer-contact {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-icon:hover {
+            background: var(--gradient-primary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Enhanced Floating Button */
+        .floating-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-glow-secondary);
+            z-index: 1000;
+            transition: var(--transition);
+            text-decoration: none;
+            border: 2px solid var(--glass-border);
+        }
+
+        .floating-button:hover {
+            transform: scale(1.1);
+            background: var(--gradient-accept);
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 8rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+            text-decoration: none;
+            border: 2px solid var(--glass-border);
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #20b358, #0a7b6b);
+        }
+
+        /* Enhanced Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced Responsive Design */
+        @media (max-width: 1024px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .courses-grid,
+            .branches-grid {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 2rem;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .nav-list {
+                position: fixed;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(15, 23, 42, 0.98);
+                backdrop-filter: blur(30px);
+                border-top: 1px solid var(--glass-border);
+                flex-direction: column;
+                gap: 0;
+                padding: 2rem 0;
+                transform: translateY(-100vh);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                z-index: 999;
+                max-height: calc(100vh - 100px);
+                overflow-y: auto;
+            }
+            
+            .nav-list.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-link {
+                color: var(--text);
+                padding: 15px 20px;
+                border-radius: 0;
+                margin: 0 20px;
+                width: auto;
+                text-align: left;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 1.1rem;
+                transition: var(--transition);
+            }
+
+            .nav-link:hover {
+                background: var(--glass-bg);
+                color: var(--accent);
+                transform: translateX(5px);
+                border-left: 3px solid var(--accent);
+                padding-left: 25px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .hero {
+                padding: 130px 0 60px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .courses-grid,
+            .branches-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .course-card {
+                min-height: 420px;
+            }
+
+            .course-icon {
+                height: 100px;
+                font-size: 2rem;
+            }
+
+            .course-content {
+                padding: 1.5rem 1rem;
+            }
+
+            .course-card:hover .course-details {
+                max-height: 280px;
+            }
+            
+            .floating-button, .whatsapp-button {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+
+            .whatsapp-button {
+                bottom: 7rem;
+            }
+
+            .about-text {
+                padding: 2rem;
+            }
+
+            .location-container {
+                gap: 2rem;
+            }
+
+            .location-info {
+                padding: 2rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-card {
+                padding: 2rem;
+            }
+            
+            .testimonial-author {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.75rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.3rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stat h3 {
+                font-size: 3rem;
+            }
+
+            .section {
+                padding: 50px 0;
+            }
+
+            .about-text,
+            .location-info {
+                padding: 1.5rem;
+            }
+
+            .contact-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Enhanced Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.6s ease;
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Enhanced Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gradient-secondary);
+        }
+
+        /* Loading Screen Styles */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(135deg, #667eea 0%, #764ba2 100%),
+                radial-gradient(circle at 20% 80%, rgba(120, 100, 200, 0.3), transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1), transparent 50%);
+            background-size: 100% 100%, 300% 300%, 200% 200%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.6s ease;
+        }
+
+        .loading-screen.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-container {
+            text-align: center;
+            position: relative;
+        }
+
+        .loading-logo {
+            margin-bottom: 30px;
+        }
+
+        .loading-logo-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 
+                0 15px 30px rgba(0, 0, 0, 0.3),
+                0 0 0 0 rgba(102, 126, 234, 0.7),
+                0 0 0 10px rgba(102, 126, 234, 0.3),
+                0 0 0 20px rgba(102, 126, 234, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .loading-text-wrapper {
+            color: white;
+        }
+
+        .loading-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            background: linear-gradient(
+                45deg, 
+                #00d4ff, 
+                #ff6b35, 
+                #f7971e, 
+                #ffd700, 
+                #00d4ff
+            );
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+
+        .loading-subtitle {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0.9;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .loading-progress {
+            margin-top: 40px;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .loading-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            box-shadow: 
+                inset 0 2px 4px rgba(0, 0, 0, 0.2),
+                0 0 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .loading-fill {
+            height: 100%;
+            background: linear-gradient(90deg, 
+                #00c6ff 0%, 
+                #0072ff 25%, 
+                #667eea 50%, 
+                #764ba2 75%, 
+                #00c6ff 100%);
+            background-size: 300% 100%;
+            border-radius: 15px;
+            width: 0%;
+            transition: width 0.3s ease;
+            box-shadow: 
+                0 0 15px rgba(0, 114, 255, 0.8),
+                0 0 30px rgba(102, 126, 234, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        .loading-percentage {
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .loading-title {
+                font-size: 1.6rem;
+            }
+            
+            .loading-subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .loading-logo-img {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .loading-progress {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;"> <!-- Disable right-click -->
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/KM+Logo.jpg" alt="KM Group Coaching" class="loading-logo-img">
+                <div class="loading-text-wrapper">
+                    <h1 class="loading-title">K.M GROUP COACHING</h1>
+                    <p class="loading-subtitle">Diploma & Degree Engineering</p>
+                </div>
+            </div>
+            <div class="loading-progress">
+                <div class="loading-bar">
+                    <div class="loading-fill"></div>
+                </div>
+                <div class="loading-percentage">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/KM+Logo.jpg" alt="KM Group Coaching Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>K.M GROUP COACHING</h1>
+                    <span>Diploma & Degree Engineering</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#courses" class="nav-link"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+                    <li><a href="#branches" class="nav-link"><i class="fas fa-map-marker-alt"></i> Branches</a></li>
+                    <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="#reviews" class="nav-link"><i class="fas fa-star"></i> Reviews</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span><i class="fas fa-medal"></i> Excellence in Engineering Education</span>
+            </div>
+            <h1 class="hero-title">Transform Your Engineering Dreams Into Reality</h1>
+            <p class="hero-subtitle">Join 800+ successful students at Ahmedabad's premier coaching institute for Diploma & Degree Engineering programs</p>
+            
+            <!-- Hero stats -->
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Pass Rate</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-number">800+</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Years</div>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary-hero">
+                    <i class="fas fa-rocket"></i> 
+                    <span>Explore Courses</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary-hero">
+                    <i class="fas fa-phone"></i> 
+                    <span>Free Consultation</span>
+                </a>
+            </div>
+            
+            <!-- Trust indicators -->
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <i class="fas fa-award"></i>
+                    <span>8+ Years Experience</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-users"></i>
+                    <span>Expert Faculty</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>2 Branches</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about reveal" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Welcome to K.M Group Coaching</h2>
+                <p class="section-description">Where Engineering Dreams Take Flight</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>8+ Years Excellence</h4>
+                                <p>Proven track record in engineering education</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users-cog"></i>
+                            <div>
+                                <h4>Expert Faculty</h4>
+                                <p>Industry professionals with deep expertise</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>99% Success Rate</h4>
+                                <p>Consistently delivering outstanding results</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>We provide <span class="highlight">quality coaching</span> for Diploma and Degree Engineering students with a focus on comprehensive learning and academic excellence. Our experienced faculty and structured programs help students achieve their educational goals.</p>
+                    <p>With <span class="highlight">two convenient locations</span> in Ahmedabad, we're committed to making quality education accessible to all aspiring engineers.</p>
+                    <p>Our teaching methodology focuses on concept clarity, regular assessments, and personalized attention to ensure every student reaches their full potential.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Personalized Learning</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Regular Assessments</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Modern Teaching Methods</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Career Guidance</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-handshake"></i> Get In Touch Today</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="https://kmgroupcoaching.s3.ap-south-1.amazonaws.com/young.jpg" alt="KM Group Coaching">
+                        <div class="image-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Excellence Award</h4>
+                                <p>Best Coaching Institute 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats reveal">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <h3 data-count="1000">0</h3>
+                    <p>Students Enrolled</p>
+                </div>
+                <div class="stat">
+                    <h3 data-count="99">0</h3>
+                    <p>Pass Percentage</p>
+                </div>
+                <div class="stat">
+                    <h3 data-count="8">0</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat">
+                    <h3 data-count="800">0</h3>
+                    <p>Toppers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section courses reveal" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Programs</span>
+                <h2 class="section-title">Engineering Courses</h2>
+                <p class="section-description">Choose from our comprehensive range of engineering disciplines</p>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- IT/ICT Engineering -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>IT / ICT Engineering</h3>
+                        <p>Information Technology & Communication</p>
+                        <div class="course-details">
+                            <p>Master modern IT systems, networking, and digital communication technologies.</p>
+                            <ul>
+                                <li>• Network Administration & Security</li>
+                                <li>• Database Management Systems</li>
+                                <li>• Web Development & Cloud Computing</li>
+                                <li>• Cybersecurity & Data Protection</li>
+                                <li>• Mobile App Development</li>
+                                <li>• System Analysis & Design</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mechanical Engineering -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Mechanical Engineering</h3>
+                        <p>Design, Manufacturing & Automation</p>
+                        <div class="course-details">
+                            <p>Comprehensive training in mechanical systems, manufacturing, and design technologies.</p>
+                            <ul>
+                                <li>• Engineering Mechanics & Dynamics</li>
+                                <li>• Thermodynamics & Heat Transfer</li>
+                                <li>• Manufacturing Processes & Technology</li>
+                                <li>• CAD/CAM & 3D Modeling</li>
+                                <li>• Machine Design & Analysis</li>
+                                <li>• Fluid Mechanics & Hydraulics</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-wrench"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Automobile Engineering -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Automobile Engineering</h3>
+                        <p>Vehicle Design & Technology</p>
+                        <div class="course-details">
+                            <p>Specialized training in automotive systems, design, and modern vehicle technologies.</p>
+                            <ul>
+                                <li>• Engine Design & Performance</li>
+                                <li>• Vehicle Dynamics & Control Systems</li>
+                                <li>• Automotive Electronics & ECU</li>
+                                <li>• Hybrid & Electric Vehicle Technology</li>
+                                <li>• Chassis Design & Suspension</li>
+                                <li>• Automotive Testing & Quality</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-car-side"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Civil Engineering -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Civil Engineering</h3>
+                        <p>Construction & Infrastructure</p>
+                        <div class="course-details">
+                            <p>Complete training in construction, structural design, and infrastructure development.</p>
+                            <ul>
+                                <li>• Structural Analysis & Design</li>
+                                <li>• Construction Management & Planning</li>
+                                <li>• Surveying & Geotechnical Engineering</li>
+                                <li>• Environmental & Water Resources</li>
+                                <li>• Transportation Engineering</li>
+                                <li>• Building Materials & Construction</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-hard-hat"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Electrical Engineering -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Electrical Engineering</h3>
+                        <p>Power Systems & Electronics</p>
+                        <div class="course-details">
+                            <p>Comprehensive training in electrical systems, power generation, and control technologies.</p>
+                            <ul>
+                                <li>• Circuit Analysis & Network Theory</li>
+                                <li>• Power Systems & Distribution</li>
+                                <li>• Control Systems & Automation</li>
+                                <li>• Power Electronics & Drives</li>
+                                <li>• Renewable Energy Systems</li>
+                                <li>• Electrical Machines & Transformers</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-lightning-bolt"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Entrance Exam Preparation -->
+                <div class="course-card entrance-exam-card">
+                    <div class="course-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Entrance Exam Preparation</h3>
+                        <p>DDCET, JEE & Other Competitive Exams</p>
+                        <div class="course-details">
+                            <p>Specialized coaching for engineering entrance examinations with proven results.</p>
+                            <ul>
+                                <li>• DDCET (Diploma to Degree CET) Preparation</li>
+                                <li>• JEE Main & Advanced Coaching</li>
+                                <li>• GUJCET & State Level Exams</li>
+                                <li>• Mathematics, Physics & Chemistry</li>
+                                <li>• Mock Tests & Performance Analysis</li>
+                                <li>• Career Guidance & Counseling</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-trophy"></i> Start Preparation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="section branches reveal" id="branches">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Locations</span>
+                <h2 class="section-title">Visit Our Branches</h2>
+                <p class="section-description">Conveniently located across Ahmedabad for your accessibility</p>
+            </div>
+            
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <i class="fas fa-building"></i>
+                        <h3>Head Branch - Ghatlodia</h3>
+                        <span class="branch-badge">Primary Campus</span>
+                    </div>
+                    <div class="branch-content">
+                        <div class="branch-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>FF-9, Bhagwat Complex, Near R.C Technical Institute, Shayona City Road, Ghatlodia, Ahmedabad - 380061</p>
+                            </div>
+                        </div>
+                        <div class="branch-info">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Timings</h4>
+                                <p>Monday to Saturday: 8:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 2:00 PM (By appointment)</p>
+                            </div>
+                        </div>
+                        <div class="branch-info">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>+91 85117 27408</p>
+                            </div>
+                        </div>
+                        <div class="branch-features">
+                            <div class="feature-tag"><i class="fas fa-wifi"></i> Free WiFi</div>
+                            <div class="feature-tag"><i class="fas fa-car"></i> Parking</div>
+                            <div class="feature-tag"><i class="fas fa-book"></i> Library</div>
+                        </div>
+                        <a href="https://maps.app.goo.gl/YX9o3TWXgzdijuHm6" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <i class="fas fa-building"></i>
+                        <h3>POP Branch - K.K Nagar</h3>
+                        <span class="branch-badge">Extension Campus</span>
+                    </div>
+                    <div class="branch-content">
+                        <div class="branch-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>B/22, Shaktinagar Society, Near HP Petrol Pump, K.K Nagar Road, Ghatlodia, Ahmedabad - 380061</p>
+                            </div>
+                        </div>
+                        <div class="branch-info">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Timings</h4>
+                                <p>Monday to Saturday: 8:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 2:00 PM (By appointment)</p>
+                            </div>
+                        </div>
+                        <div class="branch-info">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>+91 85117 27408</p>
+                            </div>
+                        </div>
+                        <div class="branch-features">
+                            <div class="feature-tag"><i class="fas fa-wifi"></i> Free WiFi</div>
+                            <div class="feature-tag"><i class="fas fa-car"></i> Parking</div>
+                            <div class="feature-tag"><i class="fas fa-users"></i> Study Hall</div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Branch Features -->
+            <div class="branch-facilities">
+                <h3 class="text-center" style="margin-bottom: 2rem;">Modern Facilities at Both Branches</h3>
+                <div class="facility-grid">
+                    <div class="facility-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h4>Smart Classrooms</h4>
+                        <p>Interactive learning with modern technology</p>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-laptop"></i>
+                        <h4>Computer Lab</h4>
+                        <p>Hands-on practical sessions</p>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-book-open"></i>
+                        <h4>Reference Library</h4>
+                        <p>Extensive collection of engineering books</p>
+                    </div>
+                    <div class="facility-item">
+                        <i class="fas fa-coffee"></i>
+                        <h4>Cafeteria</h4>
+                        <p>Refreshments and study breaks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery reveal" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Visual Tour</span>
+                <h2 class="section-title">Institute Gallery</h2>
+                <p class="section-description">Experience our modern facilities and vibrant learning environment</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <div class="gallery-filter active" data-filter="all"><i class="fas fa-th"></i> All</div>
+                <div class="gallery-filter" data-filter="classroom"><i class="fas fa-chalkboard"></i> Classrooms</div>
+                <div class="gallery-filter" data-filter="lab"><i class="fas fa-laptop"></i> Labs</div>
+                <div class="gallery-filter" data-filter="events"><i class="fas fa-calendar"></i> Events</div>
+                <div class="gallery-filter" data-filter="students"><i class="fas fa-users"></i> Students</div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="classroom">
+                    <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/class.jpg" alt="Classroom at KM Group Coaching" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Modern Classroom</h3>
+                        <p>Our well-equipped classrooms for effective learning</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="lab">
+                    <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/Classroom1.jpg" alt="Computer Lab" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Computer Lab</h3>
+                        <p>State-of-the-art computer lab for practical sessions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/Classroom.jpg" alt="Seminar Event" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Guest Lecture</h3>
+                        <p>Industry experts sharing knowledge with our students</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="students">
+                    <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/sirwith.jpg" alt="Group Study" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Group Study</h3>
+                        <p>Students collaborating on projects and assignments</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="classroom">
+                    <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/class.jpg" alt="Lecture in Progress" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Lecture Session</h3>
+                        <p>Interactive teaching methodology in action</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/Event.jpg" alt="Award Ceremony" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Award Ceremony</h3>
+                        <p>Celebrating student achievements and success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="close-modal" id="closeModal">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="modal-content">
+            <img src="" alt="" id="modalImage">
+        </div>
+    </div>
+
+    <!-- Student Reviews Section -->
+    <section class="section reviews reveal" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Student Voices</span>
+                <h2 class="section-title">What Our Students Say</h2>
+                <p class="section-description">Hear from our successful students about their experience at KM Group Coaching</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Student 1: Akshat -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The faculty at KM Group Coaching provides exceptional guidance. The study materials and regular tests helped me secure excellent marks in my semester exams."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/Akshat.jpg" alt="Akshat">
+                        <div class="author-details">
+                            <h4>Akshat</h4>
+                            <p>5th Sem, Information Technology</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Student 2: Jaydeep Daraji -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The teaching methodology here is fantastic. Concepts are explained with real-world examples which makes understanding complex topics much easier."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/jaydeep.jpg" alt="Jaydeep Daraji">
+                        <div class="author-details">
+                            <h4>Jaydeep Daraji</h4>
+                            <p>5th Sem, Computer Engineering</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Student 3: Margi Suthar -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The personalized attention and doubt-solving sessions have significantly improved my understanding of core concepts. Highly recommended for engineering students!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/margi.jpg" alt="Margi Suthar">
+                        <div class="author-details">
+                            <h4>Margi Suthar</h4>
+                            <p>3rd Sem, Computer Engineering</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Student 4: Jainil Purohit -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The faculty's expertise and the well-structured curriculum helped me grasp difficult IT concepts. The regular assessments kept me on track throughout the semester."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/Jainil.jpg" alt="Jainil Purohit">
+                        <div class="author-details">
+                            <h4>Jainil Purohit</h4>
+                            <p>5th Sem, Information Technology</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student 5: Mahek Suthar -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"One of the best engineering classes — excellent faculty, clear concepts, and practical guidance that truly prepare you for success.."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/mahek.jpg" alt="Jainil Purohit">
+                        <div class="author-details">
+                            <h4>Mahek Suthar</h4>
+                            <p>5th Sem, Information Technology</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Student 6: Savan -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Thanks to KM Group Coaching's excellent guidance and comprehensive study material, I achieved a great rank in the DDSET exam. Their test series was particularly helpful."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/savan.jpg" alt="Savan">
+                        <div class="author-details">
+                            <h4>Savan Prajapati</h4>
+                            <p>DDSET Exam Ranker</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review CTA -->
+            <div class="text-center" style="margin-top: 4rem;">
+                <h3>Join Our Success Stories</h3>
+                <p>Become part of our growing community of successful engineering students</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-user-graduate"></i> Start Your Journey
+                    </a>
+                    <a href="#courses" class="btn btn-outline">
+                        <i class="fas fa-book"></i> Explore Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section location reveal" id="location">
+        <div class="container">
+            <h2 class="section-title">Our Location</h2>
+            <p class="text-center">Find us easily with the help of Google Maps. Visit our coaching center for more information:</p>
+            
+            <div class="location-container">
+                <div class="location-info">
+                    <h3>Find Us Here</h3>
+                    <p>We are located in the heart of Ahmedabad, easily accessible from all parts of the city. Our coaching centers are equipped with modern facilities to provide the best learning environment for our students.</p>
+                    <p>Use the map to get directions to our location. You can also call us for any assistance in finding our center.</p>
+                    <a href="https://maps.app.goo.gl/YX9o3TWXgzdijuHm6" target="_blank" class="btn"><i class="fas fa-directions"></i> Get Directions</a>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.3735321246645!2d72.5320508!3d23.0834182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83972133014f%3A0xd6c7bf4a4965d7b3!2sK.M%20Group%20Engineering%20Coaching!5e0!3m2!1sen!2sin!4v1757216671823!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact reveal" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">Ready to start your engineering journey? We're here to help!</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <img src="https://kmphotoss.s3.ap-south-1.amazonaws.com/kishanphoto.png" alt="Kishan Mistry" class="contact-photo">
+                    <h3>Kishan Mistry</h3>
+                    <p>Founder & CEO</p>
+                    <span class="role-description">Guiding students to engineering excellence</span>
+                    <div class="contact-actions">
+                        <a href="tel:8511727408" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/918511727408?text=Hello%20I%20want%20to%20know%20about%20engineering%20courses" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+91 85117 27408</p>
+                    <span class="contact-timing">Mon-Sat: 8AM-8PM</span>
+                    <a href="tel:8511727408" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> Call Now
+                        </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Quick Response</p>
+                    <span class="contact-timing">Available 24/7</span>
+                    <a href="https://wa.me/918511727408?text=Hello%20I%20want%20to%20know%20about%20engineering%20courses" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Message
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Ghatlodia, Ahmedabad</p>
+                    <span class="contact-timing">2 Convenient Locations</span>
+                    <a href="#branches" class="btn btn-outline">
+                        <i class="fas fa-map"></i> View Locations
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>kmgroupcoaching18@gmail.com</p>
+                    <span class="contact-timing">Response within 24 hours</span>
+                    <a href="mailto:kmgroupcoaching18@gmail.com" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3>Schedule Visit</h3>
+                    <p>Free Consultation</p>
+                    <span class="contact-timing">Book your appointment</span>
+                    <a href="tel:8511727408" class="btn btn-outline">
+                        <i class="fas fa-calendar-plus"></i> Book Now
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Contact CTA -->
+            <div class="contact-cta" style="text-align: center; margin-top: 4rem; background: var(--glass-bg); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 3rem;">
+                <h3>Ready to Transform Your Future?</h3>
+                <p>Join hundreds of successful students who chose KM Group Coaching for their engineering journey</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="tel:8511727408" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call for Admission
+                    </a>
+                    <a href="https://wa.me/918511727408?text=Hello%20I%20want%20to%20enroll%20in%20engineering%20courses" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <h2>K.M GROUP COACHING</h2>
+                        <span>Engineering Excellence Since 2016</span>
+                    </div>
+                    <p>Empowering engineering students with quality education, expert guidance, and comprehensive support to achieve their academic and career goals.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/people/KM-Group-Coaching/100071665656370/" class="social-icon" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/k.m_group_coaching_/" class="social-icon" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCg2R-q6jtzh4_2d1pImrfhQ" class="social-icon" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/918511727408" class="social-icon" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-angle-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-angle-right"></i> About Us</a></li>
+                        <li><a href="#courses"><i class="fas fa-angle-right"></i> Courses</a></li>
+                        <li><a href="#branches"><i class="fas fa-angle-right"></i> Branches</a></li>
+                        <li><a href="#gallery"><i class="fas fa-angle-right"></i> Gallery</a></li>
+                        <li><a href="#reviews"><i class="fas fa-angle-right"></i> Reviews</a></li>
+                        <li><a href="#contact"><i class="fas fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Our Courses</h3>
+                    <ul>
+                        <li><a href="#courses"><i class="fas fa-network-wired"></i> IT/ICT Engineering</a></li>
+                        <li><a href="#courses"><i class="fas fa-cog"></i> Mechanical Engineering</a></li>
+                        <li><a href="#courses"><i class="fas fa-car"></i> Automobile Engineering</a></li>
+                        <li><a href="#courses"><i class="fas fa-building"></i> Civil Engineering</a></li>
+                        <li><a href-#courses"><i class="fas fa-bolt"></i> Electrical Engineering</a></li>
+                        <li><a href="#courses"><i class="fas fa-graduation-cap"></i> Entrance Exam Prep</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <div class="branch-info">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone:</strong>
+                            <p>+91 85117 27408</p>
+                        </div>
+                    </div>
+                    <div class="branch-info">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <p>info@kmgroupcoaching.com</p>
+                        </div>
+                    </div>
+                    <div class="branch-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location:</strong>
+                            <p>Ghatlodia, Ahmedabad<br>Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="branch-info">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Hours:</strong>
+                            <p>Mon-Sat: 8AM-8PM<br>Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                    <p>&copy; 2025 K.M Group Coaching. All rights reserved.</p>
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                        <a href="#" style="color: var(--text-light); font-size: 0.9rem;">Privacy Policy</a>
+                        <a href="#" style="color: var(--text-light); font-size: 0.9rem;">Terms & Conditions</a>
+                        <a href="#contact" style="color: var(--accent); font-size: 0.9rem;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Phone Button -->
+    <a href="tel:8511727408" class="floating-button">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918511727408?text=Hello%20there!" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navList = document.getElementById('navList');
+        
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            
+            // Animate hamburger icon
+            const icon = hamburger.querySelector('i');
+            if (navList.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                hamburger.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navList.contains(e.target)) {
+                navList.classList.remove('active');
+                hamburger.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Statistics counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat h3');
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const current = +counter.innerText;
+                const increment = target / 100;
+                
+                if (current < target) {
+                    counter.innerText = Math.ceil(current + increment);
+                    setTimeout(() => animateCounters(), 20);
+                } else {
+                    counter.innerText = target + (target === 95 ? '%' : '+');
+                }
+            });
+        }
+        
+        // Enhanced Scroll reveal animation
+        function revealElements() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach((element, index) => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 100;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    // Add stagger delay for multiple elements
+                    setTimeout(() => {
+                        element.classList.add('revealed');
+                    }, index * 100);
+                    
+                    // Trigger counter animation for stats section
+                    if (element.classList.contains('stats') && !element.hasAttribute('data-animated')) {
+                        element.setAttribute('data-animated', 'true');
+                        setTimeout(animateCounters, 500);
+                    }
+                }
+            });
+        }
+        
+        // Gallery functionality
+        const galleryFilters = document.querySelectorAll('.gallery-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const galleryModal = document.getElementById('galleryModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeModal = document.getElementById('closeModal');
+        
+        // Filter gallery items
+        galleryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                galleryFilters.forEach(f => f.classList.remove('active'));
+                filter.classList.add('active');
+                
+                const filterValue = filter.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+                    
+                    if (filterValue === 'all' || filterValue === itemCategory) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+        
+        // Open modal when gallery item is clicked
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imageSrc = item.querySelector('.gallery-image').src;
+                modalImage.src = imageSrc;
+                galleryModal.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Close modal
+        function closeGalleryModal() {
+            galleryModal.classList.remove('open');
+            document.body.style.overflow = 'auto';
+        }
+        
+        closeModal.addEventListener('click', closeGalleryModal);
+        
+        galleryModal.addEventListener('click', (e) => {
+            if (e.target === galleryModal) {
+                closeGalleryModal();
+            }
+        });
+        
+        // ESC key to close modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && galleryModal.classList.contains('open')) {
+                closeGalleryModal();
+            }
+        });
+        
+        window.addEventListener('scroll', revealElements);
+        window.addEventListener('load', revealElements);
+        
+        // Loading Screen Functionality
+        class LoadingScreen {
+            constructor() {
+                this.loadingScreen = document.getElementById('loading-screen');
+                this.progressFill = document.querySelector('.loading-fill');
+                this.percentage = document.querySelector('.loading-percentage');
+                this.currentProgress = 0;
+                this.targetProgress = 0;
+                
+                this.init();
+            }
+
+            init() {
+                this.startLoading();
+            }
+
+            startLoading() {
+                // Simulate loading phases
+                const loadingPhases = [
+                    { progress: 15, duration: 800, text: 'Initializing...' },
+                    { progress: 35, duration: 1000, text: 'Loading Resources...' },
+                    { progress: 60, duration: 900, text: 'Preparing Content...' },
+                    { progress: 85, duration: 700, text: 'Almost Ready...' },
+                    { progress: 100, duration: 600, text: 'Welcome!' }
+                ];
+
+                let currentPhase = 0;
+                
+                const nextPhase = () => {
+                    if (currentPhase < loadingPhases.length) {
+                        const phase = loadingPhases[currentPhase];
+                        this.animateProgress(phase.progress, phase.duration);
+                        currentPhase++;
+                        
+                        setTimeout(nextPhase, phase.duration + 200);
+                    } else {
+                        // Loading complete
+                        setTimeout(() => {
+                            this.hideLoading();
+                        }, 800);
+                    }
+                };
+
+                setTimeout(nextPhase, 400);
+            }
+
+            animateProgress(targetProgress, duration) {
+                const startProgress = this.currentProgress;
+                const progressDiff = targetProgress - startProgress;
+                const startTime = performance.now();
+
+                const animate = (currentTime) => {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    
+                    // Smooth cubic-bezier easing (similar to CSS ease-out)
+                    const easeOut = 1 - Math.pow(1 - progress, 2);
+                    
+                    this.currentProgress = startProgress + (progressDiff * easeOut);
+                    
+                    // Use direct style manipulation for smoother animation
+                    const roundedProgress = Math.round(this.currentProgress * 100) / 100;
+                    this.progressFill.style.width = roundedProgress + '%';
+                    this.percentage.textContent = Math.round(this.currentProgress) + '%';
+
+                    if (progress < 1) {
+                        requestAnimationFrame(animate);
+                    }
+                };
+
+                requestAnimationFrame(animate);
+            }
+
+            hideLoading() {
+                this.loadingScreen.classList.add('fade-out');
+                
+                setTimeout(() => {
+                    this.loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        }
+
+        // Initialize loading screen when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new LoadingScreen();
+        });
+    </script>
+</body>
+</html>
